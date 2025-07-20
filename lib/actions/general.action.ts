@@ -39,8 +39,8 @@ export async function createFeedback(params: CreateFeedbackParams) {
     });
 
     const feedback = {
-      interviewId: interviewId,
-      userId: userId,
+      interviewId,
+      userId,
       totalScore: object.totalScore,
       categoryScores: object.categoryScores,
       strengths: object.strengths,
