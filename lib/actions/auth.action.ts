@@ -34,7 +34,7 @@ export async function signUp(params: SignUpParams) {
     if (userRecord.exists)
       return {
         success: false,
-        message: "User already exists. Please sign in.",
+        message: "User already exists. Please sign in instead.",
       };
 
     // save user to db
